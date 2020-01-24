@@ -1,7 +1,9 @@
 const utility = require("../utility");
 
 module.exports = (req, res) => {
-  utility
-    .longRunningLibUvComputation()
-    .then(() => res.send("Done crypto libuv!"));
+  console.log("crypto --- req");
+  utility.longRunningLibUvComputation().then(() => {
+    console.log("crypto --- res");
+    res.send("Done crypto libuv!");
+  });
 };
