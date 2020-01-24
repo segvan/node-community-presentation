@@ -7,6 +7,6 @@ const cryptoLibuv = require("./routeHandlers/3_crypto_libuv");
 
 router.get("/block-thread", blockThread);
 router.get("/async", async);
-router.get("/crypto-livuv", cryptoLibuv);
+router.get("/crypto-libuv", cryptoLibuv);
 
 module.exports = router;
