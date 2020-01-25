@@ -1,8 +1,8 @@
 const utility = require("../utility");
 
 module.exports = (req, res) => {
-  console.log("block --- req");
+  console.log("sync --- req");
   utility.longRunningComputationSync();
-  console.log("block --- res");
+  console.log("sync --- res");
   res.send("Done with blocking main thread!");
 };
