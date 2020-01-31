@@ -14,5 +14,8 @@ Following endpoints are implemented:
 - /block-thread
 - /async
 - /crypto-libuv
+- /http-req
+- /child-process
+- /ping
 
 Each endpoint is handled by corresponding function from **routeHandlers** folder.
