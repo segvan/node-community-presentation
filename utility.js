@@ -8,8 +8,6 @@ function fibonacci(x) {
   }
 }
 
-exports.shortComputationSync = () => fibonacci(10);
-
 exports.longRunningComputationSync = () => fibonacci(43);
 
 exports.longRunningComputation = () => {
@@ -28,3 +26,5 @@ exports.longRunningLibUvComputation = () => {
     });
   });
 };
+
+exports.shortComputationSync = () => fibonacci(10);
